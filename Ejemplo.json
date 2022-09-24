@@ -1,0 +1,25 @@
+{
+  "age": 26,
+  "firstName": "Ram",
+  "lastName": "Sharma",
+  "phoneNumbers": [
+    {
+      "phone-number": "212 888-2365",
+      "type": "home"
+    },
+    {
+      "pedillos": [
+        {
+          "gatito": "perrito",
+          "lobito": "camaron"
+        },
+        {
+          "gatito": "pp",
+          "lobito": "kk"
+        }
+      ],
+      "phone-number": "213 888-2365",
+      "type": "cel"
+    }
+  ]
+}

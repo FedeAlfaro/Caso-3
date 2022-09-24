@@ -1,0 +1,223 @@
+{
+  "Seasons": [
+    {
+      "Nombre": "Invierno",
+      "NivelSolMax": 50,  
+      "NivelSolMin": 20,
+      "NivelLluviaMin": -5,
+      "NivelLluviaMax": 50,
+      "NivelTemperaturaMin": 0,
+      "NivelTemperaturaMax": 15
+    },
+    {
+      "Nombre": "Verano",
+      "NivelSolMax": 80,
+      "NivelSolMin": 50,
+      "NivelLluviaMin": 0,
+      "NivelLluviaMax": 30,
+      "NivelTemperaturaMin": 20,
+      "NivelTemperaturaMax": 40
+    },
+    {
+      "Nombre": "Otono",
+      "NivelSolMax": 50,
+      "NivelSolMin": 20,
+      "NivelLluviaMin": 30,
+      "NivelLluviaMax": 60,
+      "NivelTemperaturaMin": 10,
+      "NivelTemperaturaMax": 20
+    },
+    {
+      "Nombre": "Primavera",
+      "NivelSolMax": 70,
+      "NivelSolMin": 40,
+      "NivelLluviaMin": 5,
+      "NivelLluviaMax": 30,
+      "NivelTemperaturaMin": 15,
+      "NivelTemperaturaMax": 30
+    }
+  ],
+  "Plantas": [
+    {
+      "ActRangeTime": 0,
+      "ActNivelAbono": 0,
+      "ActNivelAgua": 0,
+      "ActConsumoAbono": 0,
+      "ActConsumoAgua": 0,
+      "tiempoParaConsumo": 0,
+      "Tipo": "Cilantro",
+      "vitalidad": 100,
+      "ActNivel": 0,
+      "Stage": [
+        {
+          "Nivel": 0,
+          "MinVitalidad": 0,
+          "MaxVitalidad": 0,
+          "RangeTime": 0,
+          "ConsumoAbono": 0,
+          "ConsumoAgua": 0,
+          "Imagen": "cilantroMuerta.jpg",
+          "Imagen2": "cilantroMuerta.jpg",
+          "Imagen3": "cilantroMuerta.jpg"
+        },
+        {
+          "Nivel": 1,
+          "MinVitalidad": 0,
+          "MaxVitalidad": 0,
+          "RangeTime": 3,
+          "ConsumoAbono": 0,
+          "ConsumoAgua": 0,
+          "Imagen": "cilantroalmacigoCarencia.jpg",
+          "Imagen2": "cilantroalmacigo.jpg",
+          "Imagen3": "cilantroalmacigoExceso.jpg"
+        },
+        {
+          "Nivel": 2,
+          "MinVitalidad": 0,
+          "MaxVitalidad": 0,
+          "RangeTime": 2,
+          "ConsumoAbono": 0,
+          "ConsumoAgua": 0,
+          "Imagen": "cilantrojovenCarencia.jpg",
+          "Imagen2": "cilantrojoven.jpg",
+          "Imagen3": "cilantrojovenExceso.jpg"
+        },
+        {
+          "Nivel": 3,
+          "MinVitalidad": 0,
+          "MaxVitalidad": 0,
+          "RangeTime": 3,
+          "ConsumoAbono": 0,
+          "ConsumoAgua": 0,
+          "Imagen": "cilantroadultoCarencia.jpg",
+          "Imagen2": "cilantroadulto.jpg",
+          "Imagen3": "cilantroadultoExceso.jpg"
+        }
+      ]
+    },
+    {
+      "ActRangeTime": 0,
+      "ActNivelAbono": 5,
+      "ActNivelAgua": 0,
+      "ActConsumoAbono": 0,
+      "ActConsumoAgua": 0,
+      "tiempoParaConsumo": 0,
+      "Tipo": "Cactus",
+      "vitalidad": 100,
+      "ActNivel": 0,
+      "Stages": [
+        {
+          "Nivel": 0,
+          "MinVitalidad": 0,
+          "MaxVitalidad": 0,
+          "RangeTime": 0,
+          "ConsumoAbono": 0,
+          "ConsumoAgua": 0,
+          "Imagen": "cactusMuerto.jpg",
+          "Imagen2": "cactusMuerto.jpg",
+          "Imagen3": "cactusMuerto.jpg"
+        },
+        {
+          "Nivel": 1,
+          "MinVitalidad": 0,
+          "MaxVitalidad": 0,
+          "RangeTime": 3,
+          "ConsumoAbono": 0,
+          "ConsumoAgua": 0,
+          "Imagen": "cactusalmacigoCarencia.jpg",
+          "Imagen2": "cactusalmacigo.jpg",
+          "Imagen3": "cactusalmacigoExceso.jpg"
+        },
+        {
+          "Nivel": 2,
+          "MinVitalidad": 0,
+          "MaxVitalidad": 0,
+          "RangeTime": 2,
+          "ConsumoAbono": 0,
+          "ConsumoAgua": 0,
+          "Imagen": "cactusjovenCarencia.jpg",
+          "Imagen2": "cactusjoven.jpg",
+          "Imagen3": "cactusjovenExceso.jpg"
+        },
+        {
+          "Nivel": 3,
+          "MinVitalidad": 0,
+          "MaxVitalidad": 0,
+          "RangeTime": 3,
+          "ConsumoAbono": 0,
+          "ConsumoAgua": 0,
+          "Imagen": "cactusadultaCarencia.jpg",
+          "Imagen2": "cactusadulta.jpg",
+          "Imagen3": "cactusadultaExceso.jpg"
+        }
+      ]
+    },
+    {
+      "Tipo": "Rabano",
+      "vitalidad": 100,
+      "ActRangeTime": 0,
+      "ActNivelAgua": 0,
+      "ActNivelAbono": 0,
+      "tiempoParaConsumo": 0,
+      "ActConsumoAgua": 0,
+      "ActConsumoAbono": 0,
+      "ActNivel": 0,
+      "Stages": [
+        {
+          "Nivel": 0,
+          "MinVitalidad": 0,
+          "MaxVitalidad": 0,
+          "RangeTime": 0,
+          "ConsumoAbono": 0,
+          "ConsumoAgua": 0,
+          "Imagen": "rabanoMuerto.jpg",
+          "Imagen2": "rabanoMuerto.jpg",
+          "Imagen3": "rabanoMuerto.jpg"
+        },
+        {
+          "Nivel": 1,
+          "MinVitalidad": 0,
+          "MaxVitalidad": 0,
+          "RangeTime": 2,
+          "ConsumoAbono": 0,
+          "ConsumoAgua": 0,
+          "Imagen": "rabanoAlmacigoCarencia.jpg",
+          "Imagen2": "rabanoAlmacigo.jpg",
+          "Imagen3": "rabanoAlmacigoExceso.jpg"
+        },
+        {
+          "Nivel": 2,
+          "MinVitalidad": 0,
+          "MaxVitalidad": 0,
+          "RangeTime": 3,
+          "ConsumoAbono": 0,
+          "ConsumoAgua": 0,
+          "Imagen": "rabanoJovenCarencia.jpg",
+          "Imagen2": "rabanoJoven.jpg",
+          "Imagen3": "rabanoJovenExceso.jpg"
+        },
+        {
+          "Nivel": 3,
+          "ConsumoAbono": 0,
+          "ConsumoAgua": 0,
+          "Imagen": "rabanoAdultaCarencia.jpg",
+          "Imagen2": "rabanoAdulta.jpg",
+          "Imagen3": "rabanoAdultaExceso.jpg",
+          "MinVitalidad": 0,
+          "MaxVitalidad": 0,
+          "RangeTime": 4
+        }
+      ]
+    }
+  ],
+  "Rules": [
+    {
+      "Anno": 480, 
+      "Mes": 12,
+      "Dia": 30,
+      "CambioEstacion": "3",
+      "Abonar": 5, 
+      "Regar": 5
+    }
+  ]
+}
