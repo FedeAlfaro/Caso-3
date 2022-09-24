@@ -105,7 +105,7 @@
       "Tipo": "Cactus",
       "vitalidad": 100,
       "ActNivel": 0,
-      "Stages": [
+      "Stage": [
         {
           "Nivel": 0,
           "MinVitalidad": 0,
@@ -162,7 +162,7 @@
       "ActConsumoAgua": 0,
       "ActConsumoAbono": 0,
       "ActNivel": 0,
-      "Stages": [
+      "Stage": [
         {
           "Nivel": 0,
           "MinVitalidad": 0,

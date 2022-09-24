@@ -4,9 +4,9 @@ import java.io.FileReader;
 import java.util.ArrayList;
 
 import org.json.simple.JSONArray;
-//import org.json.simple.JSONObject;
+import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
-import org.json.JSONObject;
+//import org.json.JSONObject;
 
 
 public class Prueba {
@@ -40,7 +40,7 @@ public class Prueba {
 
 				//newConfig.setTipo((String) jObj1.get("Tipo"));
 				//newConfig.setActNivelAbono((Long)jObj1.get("ActNivelAbono"));
-				float kk= jObj1.getFloat("ActNivelAbono");
+				int kk= ((Number)jObj1.get("ActNivelAbono")).intValue();
 				System.out.println((int) kk+pp);
 			}
 		}catch(Exception e){

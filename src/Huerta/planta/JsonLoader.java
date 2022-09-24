@@ -40,14 +40,14 @@ public class JsonLoader {
 				PlantConfig newConfig = new PlantConfig();
 
 				newConfig.setTipo((String) jObj1.get("Tipo"));
-				newConfig.setActNivelAbono(Integer.parseInt((String)jObj1.get("ActNivelAbono")));
-				newConfig.setActNivel(Integer.parseInt((String)jObj1.get("ActNivel")));
-				newConfig.setActNivelAgua(Integer.parseInt((String)jObj1.get("ActNivelAgua"))); 
-				newConfig.setActRangeTime(Float.parseFloat((String) jObj1.get("ActRangeTime"))); 
-				newConfig.setActConsumoAbono(Integer.parseInt((String) jObj1.get("ActConsumoAbono"))); 
-				newConfig.setActConsumoAgua(Integer.parseInt((String) jObj1.get("ActConsumoAgua"))); 
-				newConfig.setTiempoParaConsumo(Integer.parseInt((String) jObj1.get("tiempoParaConsumo"))); 
-				newConfig.setVitalidad(Integer.parseInt((String) jObj1.get("vitalidad")));
+				newConfig.setActNivelAbono(((Number)jObj1.get("ActNivelAbono")).intValue());
+				newConfig.setActNivel(((Number)jObj1.get("ActNivel")).intValue());
+				newConfig.setActNivelAgua(((Number) jObj1.get("ActNivelAgua")).intValue()); 
+				newConfig.setActRangeTime(((Number) jObj1.get("ActRangeTime")).floatValue()); 
+				newConfig.setActConsumoAbono(((Number) jObj1.get("ActConsumoAbono")).intValue()); 
+				newConfig.setActConsumoAgua(((Number) jObj1.get("ActConsumoAgua")).intValue()); 
+				newConfig.setTiempoParaConsumo(((Number) jObj1.get("tiempoParaConsumo")).intValue()); 
+				newConfig.setVitalidad(((Number) jObj1.get("vitalidad")).intValue());
 				
 				JSONArray Stages = (JSONArray) jObj1.get("Stage");
 				for(int j=0; j< Plantas.size(); j++) {
@@ -55,12 +55,12 @@ public class JsonLoader {
 					
 					StageConfig newConfigS = new StageConfig();
 					
-					newConfigS.setNivel(Integer.parseInt((String) jObj2.get("Nivel")));
-					newConfigS.setMinVitalidad(Integer.parseInt((String)jObj2.get("MinVitalidad")));
-					newConfigS.setMaxVitalidad(Integer.parseInt((String)jObj2.get("MaxVitalidad")));
-					newConfigS.setRangeTime(Float.parseFloat((String) jObj2.get("RangeTime"))); 
-					newConfigS.setConsumoAbono(Integer.parseInt((String) jObj2.get("ConsumoAbono"))); 
-					newConfigS.setConsumoAgua(Integer.parseInt((String) jObj2.get("ConsumoAgua"))); 
+					newConfigS.setNivel(((Number) jObj2.get("Nivel")).intValue());
+					newConfigS.setMinVitalidad(((Number)jObj2.get("MinVitalidad")).intValue());
+					newConfigS.setMaxVitalidad(((Number)jObj2.get("MaxVitalidad")).intValue());
+					newConfigS.setRangeTime(((Number) jObj2.get("RangeTime")).floatValue()); 
+					newConfigS.setConsumoAbono(((Number) jObj2.get("ConsumoAbono")).intValue()); 
+					newConfigS.setConsumoAgua(((Number) jObj2.get("ConsumoAgua")).intValue()); 
 					newConfigS.setImagen((String) jObj1.get("Imagen")); 
 					newConfigS.setImagen2((String) jObj1.get("Imagen2")); 
 					newConfigS.setImagen3((String) jObj1.get("Imagen3"));
@@ -87,12 +87,12 @@ public class JsonLoader {
 				SeasonConfig newConfigS = new SeasonConfig();
 				
 				newConfigS.setNombre((String) jObj1.get("Nombre"));
-				newConfigS.setNivelSolMax(Integer.parseInt((String)jObj1.get("NivelSolMax")));
-				newConfigS.setNivelSolMin(Integer.parseInt((String)jObj1.get("NivelSolMin")));
-				newConfigS.setNivelLluviaMin(Integer.parseInt((String) jObj1.get("NivelLluviaMin"))); 
-				newConfigS.setNivelLluviaMax(Integer.parseInt((String) jObj1.get("NivelLluviaMax"))); 
-				newConfigS.setNivelTemperaturaMin(Integer.parseInt((String) jObj1.get("NivelTemperaturaMin"))); 
-				newConfigS.setNivelTemperaturaMax(Integer.parseInt((String) jObj1.get("NivelTemperaturaMax"))); 
+				newConfigS.setNivelSolMax(((Number)jObj1.get("NivelSolMax")).intValue());
+				newConfigS.setNivelSolMin(((Number)jObj1.get("NivelSolMin")).intValue());
+				newConfigS.setNivelLluviaMin(((Number) jObj1.get("NivelLluviaMin")).intValue()); 
+				newConfigS.setNivelLluviaMax(((Number) jObj1.get("NivelLluviaMax")).intValue()); 
+				newConfigS.setNivelTemperaturaMin(((Number) jObj1.get("NivelTemperaturaMin")).intValue()); 
+				newConfigS.setNivelTemperaturaMax(((Number) jObj1.get("NivelTemperaturaMax")).intValue()); 
 							
 				arraylSeason.add(newConfigS);
 			}
