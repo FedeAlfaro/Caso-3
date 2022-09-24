@@ -1,7 +1,7 @@
 package Huerta.planta;
 
 import java.util.*;
-
+import java.io.IOException;
 
 
 
@@ -21,13 +21,22 @@ public class Huerta {
 		arraylPlanta= j.getArraylPlanta();
 		arraylSeason= j.getArraylSeason();
 		
-		Scanner lectura = new Scanner (System.in);
+		//Scanner lectura = new Scanner (System.in);
 		System.out.println("Elija una opción:\n0 para cilantro\n1 para cactus \n2 para rabano");
-		int opcion = lectura.nextInt();
+		//int opcion = lectura.nextInt();
+		int opcion=-1;
+		try {
+			opcion = System.in.read()-48;
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		if(0<=opcion && opcion< arraylPlanta.size()) {
 			Planta plantita = new Planta(arraylPlanta.get(opcion));
 			plantita.imprimirPlanta();
 			Plantas.add(plantita);
+		}else {
+			System.out.println("Opción digitada está fuera de los limites");
 		}
 		
 		

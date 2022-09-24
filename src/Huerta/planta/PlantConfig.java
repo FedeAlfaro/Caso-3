@@ -24,50 +24,50 @@ public class PlantConfig {
 	public int getActNivelAbono() {
 		return ActNivelAbono;
 	}
-	public void setActNivelAbono(long actNivelAbono) {
-		ActNivelAbono = (int) actNivelAbono;
+	public void setActNivelAbono(int actNivelAbono) {
+		ActNivelAbono =  actNivelAbono;
 	}
 	public int getActNivelAgua() {
 		return ActNivelAgua;
 	}
-	public void setActNivelAgua(long actNivelAgua) {
-		ActNivelAgua = (int) actNivelAgua;
+	public void setActNivelAgua(int actNivelAgua) {
+		ActNivelAgua =  actNivelAgua;
 	}
 	public float getActRangeTime() {
 		return ActRangeTime;
 	}
-	public void setActRangeTime(double actRangeTime) {
-		ActRangeTime = (float) actRangeTime;
+	public void setActRangeTime(float actRangeTime) {
+		ActRangeTime =  actRangeTime;
 	}
 	public int getActConsumoAbono() {
 		return ActConsumoAbono;
 	}
-	public void setActConsumoAbono(long actConsumoAbono) {
-		ActConsumoAbono = (int) actConsumoAbono;
+	public void setActConsumoAbono(int actConsumoAbono) {
+		ActConsumoAbono =  actConsumoAbono;
 	}
 	public int getActConsumoAgua() {
 		return ActConsumoAgua;
 	}
-	public void setActConsumoAgua(long actConsumoAgua) {
-		ActConsumoAgua = (int) actConsumoAgua;
+	public void setActConsumoAgua(int actConsumoAgua) {
+		ActConsumoAgua =  actConsumoAgua;
 	}
 	public int getTiempoParaConsumo() {
 		return tiempoParaConsumo;
 	}
-	public void setTiempoParaConsumo(long tiempoParaConsumo) {
-		this.tiempoParaConsumo = (int) tiempoParaConsumo;
+	public void setTiempoParaConsumo(int tiempoParaConsumo) {
+		this.tiempoParaConsumo = tiempoParaConsumo;
 	}
 	public int getVitalidad() {
 		return vitalidad;
 	}
-	public void setVitalidad(long vitalidad) {
-		this.vitalidad = (int) vitalidad;
+	public void setVitalidad(int vitalidad) {
+		this.vitalidad = vitalidad;
 	}
 	public int getActNivel() {
 		return ActNivel;
 	}
-	public void setActNivel(long actNivel) {
-		ActNivel = (int) actNivel;
+	public void setActNivel(int actNivel) {
+		ActNivel = actNivel;
 	}
 	public ArrayList<StageConfig> getStages() {
 		return Stages;

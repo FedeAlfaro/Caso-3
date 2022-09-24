@@ -20,38 +20,38 @@ public class SeasonConfig {
 	public int getNivelSolMax() {
 		return NivelSolMax;
 	}
-	public void setNivelSolMax(long nivelSolMax) {
-		NivelSolMax = (int) nivelSolMax;
+	public void setNivelSolMax(int nivelSolMax) {
+		NivelSolMax =  nivelSolMax;
 	}
 	public int getNivelSolMin() {
 		return NivelSolMin;
 	}
-	public void setNivelSolMin(long nivelSolMin) {
-		NivelSolMin = (int) nivelSolMin;
+	public void setNivelSolMin(int nivelSolMin) {
+		NivelSolMin = nivelSolMin;
 	}
 	public int getNivelLluviaMin() {
 		return NivelLluviaMin;
 	}
-	public void setNivelLluviaMin(long nivelLluviaMin) {
-		NivelLluviaMin = (int) nivelLluviaMin;
+	public void setNivelLluviaMin(int nivelLluviaMin) {
+		NivelLluviaMin = nivelLluviaMin;
 	}
 	public int getNivelLluviaMax() {
 		return NivelLluviaMax;
 	}
-	public void setNivelLluviaMax(long nivelLluviaMax) {
-		NivelLluviaMax = (int) nivelLluviaMax;
+	public void setNivelLluviaMax(int nivelLluviaMax) {
+		NivelLluviaMax =  nivelLluviaMax;
 	}
 	public int getNivelTemperaturaMin() {
 		return NivelTemperaturaMin;
 	}
-	public void setNivelTemperaturaMin(long nivelTemperaturaMin) {
-		NivelTemperaturaMin = (int) nivelTemperaturaMin;
+	public void setNivelTemperaturaMin(int nivelTemperaturaMin) {
+		NivelTemperaturaMin = nivelTemperaturaMin;
 	}
 	public int getNivelTemperaturaMax() {
 		return NivelTemperaturaMax;
 	}
-	public void setNivelTemperaturaMax(long nivelTemperaturaMax) {
-		NivelTemperaturaMax = (int) nivelTemperaturaMax;
+	public void setNivelTemperaturaMax(int nivelTemperaturaMax) {
+		NivelTemperaturaMax =  nivelTemperaturaMax;
 	}
 	
 }

@@ -40,14 +40,14 @@ public class JsonLoader {
 				PlantConfig newConfig = new PlantConfig();
 
 				newConfig.setTipo((String) jObj1.get("Tipo"));
-				newConfig.setActNivelAbono((long)jObj1.get("ActNivelAbono"));
-				newConfig.setActNivel((long)jObj1.get("ActNivel"));
-				newConfig.setActNivelAgua((long) jObj1.get("ActNivelAgua")); 
-				newConfig.setActRangeTime((double) jObj1.get("ActRangeTime")); 
-				newConfig.setActConsumoAbono((long) jObj1.get("ActConsumoAbono")); 
-				newConfig.setActConsumoAgua((long) jObj1.get("ActConsumoAgua")); 
-				newConfig.setTiempoParaConsumo((long) jObj1.get("tiempoParaConsumo")); 
-				newConfig.setVitalidad((long) jObj1.get("vitalidad"));
+				newConfig.setActNivelAbono(Integer.parseInt((String)jObj1.get("ActNivelAbono")));
+				newConfig.setActNivel(Integer.parseInt((String)jObj1.get("ActNivel")));
+				newConfig.setActNivelAgua(Integer.parseInt((String)jObj1.get("ActNivelAgua"))); 
+				newConfig.setActRangeTime(Float.parseFloat((String) jObj1.get("ActRangeTime"))); 
+				newConfig.setActConsumoAbono(Integer.parseInt((String) jObj1.get("ActConsumoAbono"))); 
+				newConfig.setActConsumoAgua(Integer.parseInt((String) jObj1.get("ActConsumoAgua"))); 
+				newConfig.setTiempoParaConsumo(Integer.parseInt((String) jObj1.get("tiempoParaConsumo"))); 
+				newConfig.setVitalidad(Integer.parseInt((String) jObj1.get("vitalidad")));
 				
 				JSONArray Stages = (JSONArray) jObj1.get("Stage");
 				for(int j=0; j< Plantas.size(); j++) {
@@ -55,12 +55,12 @@ public class JsonLoader {
 					
 					StageConfig newConfigS = new StageConfig();
 					
-					newConfigS.setNivel((long) jObj2.get("Nivel"));
-					newConfigS.setMinVitalidad((long)jObj2.get("MinVitalidad"));
-					newConfigS.setMaxVitalidad((long)jObj2.get("MaxVitalidad"));
-					newConfigS.setRangeTime((double) jObj2.get("RangeTime")); 
-					newConfigS.setConsumoAbono((long) jObj2.get("ConsumoAbono")); 
-					newConfigS.setConsumoAgua((long) jObj2.get("ConsumoAgua")); 
+					newConfigS.setNivel(Integer.parseInt((String) jObj2.get("Nivel")));
+					newConfigS.setMinVitalidad(Integer.parseInt((String)jObj2.get("MinVitalidad")));
+					newConfigS.setMaxVitalidad(Integer.parseInt((String)jObj2.get("MaxVitalidad")));
+					newConfigS.setRangeTime(Float.parseFloat((String) jObj2.get("RangeTime"))); 
+					newConfigS.setConsumoAbono(Integer.parseInt((String) jObj2.get("ConsumoAbono"))); 
+					newConfigS.setConsumoAgua(Integer.parseInt((String) jObj2.get("ConsumoAgua"))); 
 					newConfigS.setImagen((String) jObj1.get("Imagen")); 
 					newConfigS.setImagen2((String) jObj1.get("Imagen2")); 
 					newConfigS.setImagen3((String) jObj1.get("Imagen3"));
@@ -87,12 +87,12 @@ public class JsonLoader {
 				SeasonConfig newConfigS = new SeasonConfig();
 				
 				newConfigS.setNombre((String) jObj1.get("Nombre"));
-				newConfigS.setNivelSolMax((long)jObj1.get("NivelSolM"));
-				newConfigS.setNivelSolMin((long)jObj1.get("NivelSolMin"));
-				newConfigS.setNivelLluviaMin((long) jObj1.get("NivelLluviaMin")); 
-				newConfigS.setNivelLluviaMax((long) jObj1.get("NivelLluviaMax")); 
-				newConfigS.setNivelTemperaturaMin((long) jObj1.get("NivelTemperaturaMin")); 
-				newConfigS.setNivelTemperaturaMax((long) jObj1.get("NivelTemperaturaMax")); 
+				newConfigS.setNivelSolMax(Integer.parseInt((String)jObj1.get("NivelSolMax")));
+				newConfigS.setNivelSolMin(Integer.parseInt((String)jObj1.get("NivelSolMin")));
+				newConfigS.setNivelLluviaMin(Integer.parseInt((String) jObj1.get("NivelLluviaMin"))); 
+				newConfigS.setNivelLluviaMax(Integer.parseInt((String) jObj1.get("NivelLluviaMax"))); 
+				newConfigS.setNivelTemperaturaMin(Integer.parseInt((String) jObj1.get("NivelTemperaturaMin"))); 
+				newConfigS.setNivelTemperaturaMax(Integer.parseInt((String) jObj1.get("NivelTemperaturaMax"))); 
 							
 				arraylSeason.add(newConfigS);
 			}

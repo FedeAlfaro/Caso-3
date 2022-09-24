@@ -17,38 +17,38 @@ public class StageConfig {
 	public int getNivel() {
 		return Nivel;
 	}
-	public void setNivel(long nivel) {
-		Nivel = (int) nivel;
+	public void setNivel(int nivel) {
+		Nivel = nivel;
 	}
 	public int getMinVitalidad() {
 		return MinVitalidad;
 	}
-	public void setMinVitalidad(long minVitalidad) {
-		MinVitalidad = (int) minVitalidad;
+	public void setMinVitalidad(int minVitalidad) {
+		MinVitalidad =  minVitalidad;
 	}
 	public int getMaxVitalidad() {
 		return MaxVitalidad;
 	}
-	public void setMaxVitalidad(long maxVitalidad) {
-		MaxVitalidad = (int) maxVitalidad;
+	public void setMaxVitalidad(int maxVitalidad) {
+		MaxVitalidad =  maxVitalidad;
 	}
 	public float getRangeTime() {
 		return RangeTime;
 	}
-	public void setRangeTime(double rangeTime) {
-		RangeTime = (float) rangeTime;
+	public void setRangeTime(float rangeTime) {
+		RangeTime =  rangeTime;
 	}
 	public int getConsumoAbono() {
 		return ConsumoAbono;
 	}
-	public void setConsumoAbono(long consumoAbono) {
-		ConsumoAbono = (int) consumoAbono;
+	public void setConsumoAbono(int consumoAbono) {
+		ConsumoAbono =  consumoAbono;
 	}
 	public int getConsumoAgua() {
 		return ConsumoAgua;
 	}
-	public void setConsumoAgua(long consumoAgua) {
-		ConsumoAgua = (int) consumoAgua;
+	public void setConsumoAgua(int consumoAgua) {
+		ConsumoAgua =  consumoAgua;
 	}
 	public String getImagen() {
 		return Imagen;
