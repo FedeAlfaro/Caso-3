@@ -7,7 +7,8 @@
       "NivelLluviaMin": -5,
       "NivelLluviaMax": 50,
       "NivelTemperaturaMin": 0,
-      "NivelTemperaturaMax": 15
+      "NivelTemperaturaMax": 15,
+      "Duracion": 0.2
     },
     {
       "Nombre": "Verano",
@@ -16,7 +17,8 @@
       "NivelLluviaMin": 0,
       "NivelLluviaMax": 30,
       "NivelTemperaturaMin": 20,
-      "NivelTemperaturaMax": 40
+      "NivelTemperaturaMax": 40,
+      "Duracion": 0.3
     },
     {
       "Nombre": "Otono",
@@ -25,7 +27,8 @@
       "NivelLluviaMin": 30,
       "NivelLluviaMax": 60,
       "NivelTemperaturaMin": 10,
-      "NivelTemperaturaMax": 20
+      "NivelTemperaturaMax": 20,
+      "Duracion": 0.3
     },
     {
       "Nombre": "Primavera",
@@ -34,7 +37,8 @@
       "NivelLluviaMin": 5,
       "NivelLluviaMax": 30,
       "NivelTemperaturaMin": 15,
-      "NivelTemperaturaMax": 30
+      "NivelTemperaturaMax": 30,
+      "Duracion": 0.2
     }
   ],
   "Plantas": [
@@ -210,14 +214,13 @@
       ]
     }
   ],
-  "Rules": [
+  "Rules": 
     {
-      "Anno": 480, 
-      "Mes": 12,
+      "DaysInYear": 365, 
+      "DayInMillis": 5000,
       "Dia": 30,
       "CambioEstacion": "3",
       "Abonar": 5, 
       "Regar": 5
     }
-  ]
 }
