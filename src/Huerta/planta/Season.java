@@ -9,7 +9,25 @@ public class Season {
 	private int NivelLluviaMax;
 	private int NivelTemperaturaMin;
 	private int NivelTemperaturaMax;
+	private float Duracion;
 	
+	public Season(SeasonConfig taylord) {
+		Nombre= taylord.getNombre();
+		NivelSolMax=taylord.getNivelSolMax();  
+		NivelSolMin=taylord.getNivelSolMin();
+		NivelLluviaMin=taylord.getNivelLluviaMin();
+		NivelLluviaMax=taylord.getNivelLluviaMax();
+		NivelTemperaturaMin=taylord.getNivelTemperaturaMin();
+		Duracion=taylord.getDuracion();
+	}
+
+	public float getDuracion() {
+		return Duracion;
+	}
+
+	public void setDuracion(float duracion) {
+		Duracion = duracion;
+	}
 
 	public void imprimirSeason() {
 		System.out.println("Nombre: "+Nombre+"\n"+"NivelSolMax: "+NivelSolMax+"\n"+"NivelSolMin: "+NivelSolMin+"\n"+"NivelLluviaMin: "+ NivelLluviaMin+"\n"+"NivelLluviaMax: "+NivelLluviaMax+"\n"+"NivelTemperaturaMin: "+NivelTemperaturaMin+"\n"+"NivelTemperaturaMax: "+NivelTemperaturaMax+"\n");
@@ -85,21 +103,20 @@ public class Season {
 		NivelTemperaturaMax = nivelTemperaturaMax;
 	}
 	
-	
-	
-	/*
-	public Season(String[] array) {
-		Nombre= array[0];
-		try {
-		NivelSolMax= Integer.parseInt(array[1]);  
-		NivelSolMin= Integer.parseInt(array[2]);
-		NivelLluviaMin= Integer.parseInt(array[3]);
-		NivelLluviaMax= Integer.parseInt(array[4]);
-		NivelTemperaturaMin= Integer.parseInt(array[5]);
-		NivelTemperaturaMax= Integer.parseInt(array[6]);
-		}catch(Exception e){
-			e.printStackTrace();
-		}
+	public int GenerarSolActual() {
+		int solActual = (int)(Math.random()*(NivelSolMax-NivelSolMin+1)+NivelSolMin);
+		return solActual;
 	}
-	*/ 
+	
+	public int GenerarLluviaActual() {
+		int lluviaActual = (int)(Math.random()*(NivelLluviaMax-NivelLluviaMin+1)+NivelLluviaMin);
+		return lluviaActual;
+	}
+	
+	public int GenerarTemperaturaActual() {
+		int temperaturaActual = (int)(Math.random()*(NivelTemperaturaMax-NivelTemperaturaMin+1)+NivelTemperaturaMin);
+		return temperaturaActual;
+	}
+	
+
 }

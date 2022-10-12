@@ -1,4 +1,4 @@
-package Huerta.planta;
+package Pruebas;
 
 import java.io.FileReader;
 import java.util.ArrayList;
