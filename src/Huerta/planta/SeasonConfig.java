@@ -9,8 +9,15 @@ public class SeasonConfig {
 	private int NivelLluviaMax;
 	private int NivelTemperaturaMin;
 	private int NivelTemperaturaMax;
+	private float Duracion;
 	
 	
+	public float getDuracion() {
+		return Duracion;
+	}
+	public void setDuracion(float duracion) {
+		Duracion = duracion;
+	}
 	public String getNombre() {
 		return Nombre;
 	}
@@ -53,5 +60,7 @@ public class SeasonConfig {
 	public void setNivelTemperaturaMax(int nivelTemperaturaMax) {
 		NivelTemperaturaMax =  nivelTemperaturaMax;
 	}
+	
+
 	
 }

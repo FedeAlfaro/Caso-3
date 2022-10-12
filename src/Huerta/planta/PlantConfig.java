@@ -12,8 +12,36 @@ public class PlantConfig {
 	int tiempoParaConsumo; 
 	int vitalidad; 
 	int ActNivel;
-	ArrayList<StageConfig> Stages;
+	int MaxAgua;
+	int MinAgua;
+	int MaxAbono;
+	int MinAbono;
+	ArrayList<Stage> Stages= new ArrayList<Stage>();
 	
+	public int getMaxAgua() {
+		return MaxAgua;
+	}
+	public void setMaxAgua(int maxAgua) {
+		MaxAgua = maxAgua;
+	}
+	public int getMinAgua() {
+		return MinAgua;
+	}
+	public void setMinAgua(int minAgua) {
+		MinAgua = minAgua;
+	}
+	public int getMaxAbono() {
+		return MaxAbono;
+	}
+	public void setMaxAbono(int maxAbono) {
+		MaxAbono = maxAbono;
+	}
+	public int getMinAbono() {
+		return MinAbono;
+	}
+	public void setMinAbono(int minAbono) {
+		MinAbono = minAbono;
+	}
 	
 	public String getTipo() {
 		return Tipo;
@@ -69,11 +97,14 @@ public class PlantConfig {
 	public void setActNivel(int actNivel) {
 		ActNivel = actNivel;
 	}
-	public ArrayList<StageConfig> getStages() {
+	public ArrayList<Stage> getStages() {
 		return Stages;
 	}
 	public void setStages(ArrayList<StageConfig> stages) {
-		Stages = stages;
+		for(int i=0; i< stages.size(); i++) {
+			Stage stage = new Stage(stages.get(i));
+			Stages.add(stage);
+		}	
 	}
 	
 	

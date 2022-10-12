@@ -2,8 +2,12 @@ package Huerta.planta;
 
 public class StageConfig {
 	int Nivel;
-    int MinVitalidad;
-    int MaxVitalidad;
+    int MinTemp;
+    int MaxTemp;
+    int MinSol;
+    int MaxSol;
+    int MinLluvia;
+    int MaxLuvia;
     float RangeTime;
     int ConsumoAbono; 
     int ConsumoAgua;
@@ -14,23 +18,50 @@ public class StageConfig {
     
     
     
+	public int Imagen2() {
+		return Nivel;
+	}
 	public int getNivel() {
 		return Nivel;
 	}
 	public void setNivel(int nivel) {
 		Nivel = nivel;
 	}
-	public int getMinVitalidad() {
-		return MinVitalidad;
+	public int getMinTemp() {
+		return MinTemp;
 	}
-	public void setMinVitalidad(int minVitalidad) {
-		MinVitalidad =  minVitalidad;
+	public void setMinTemp(int minTemp) {
+		MinTemp = minTemp;
 	}
-	public int getMaxVitalidad() {
-		return MaxVitalidad;
+	public int getMaxTemp() {
+		return MaxTemp;
 	}
-	public void setMaxVitalidad(int maxVitalidad) {
-		MaxVitalidad =  maxVitalidad;
+	public void setMaxTemp(int maxTemp) {
+		MaxTemp = maxTemp;
+	}
+	public int getMinSol() {
+		return MinSol;
+	}
+	public void setMinSol(int minSol) {
+		MinSol = minSol;
+	}
+	public int getMaxSol() {
+		return MaxSol;
+	}
+	public void setMaxSol(int maxSol) {
+		MaxSol = maxSol;
+	}
+	public int getMinLluvia() {
+		return MinLluvia;
+	}
+	public void setMinLluvia(int minLluvia) {
+		MinLluvia = minLluvia;
+	}
+	public int getMaxLuvia() {
+		return MaxLuvia;
+	}
+	public void setMaxLuvia(int maxLuvia) {
+		MaxLuvia = maxLuvia;
 	}
 	public float getRangeTime() {
 		return RangeTime;
